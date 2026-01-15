@@ -1,26 +1,3 @@
 OK_FORMAT = True
-
-test = {
-    "name": "qC3",
-    "points": 1,
-    "suites": [
-        {
-            "cases": [
-                {
-                    "code": r"""
->>> import math
->>> x = Xn_eq(1.0, Q=1.293)
->>> 0.0 < x < 0.5
-True
-""",
-                    "hidden": False,
-                    "locked": False,
-                },
-            ],
-            "scored": True,
-            "setup": "",
-            "teardown": "",
-            "type": "doctest"
-        }
-    ]
-}
+from tests._loader import _d
+test = _d("eJw9TrEKwjAUrFirdPITMipIqYqD0HbRzUlwcBEJSaBFm9QmQR0ER4U3Pj/MPzJW8KY77o67u/96ez/ccAC+pKVAaJ8WU4SgUoU0GlctCLQtjNC4w2+qw6j+C58p7irLMMsyUpSVqg0pqckbfSEp2cq9OA3GUTwi63QcTebTYePFUUwSl0gcm4Wb2orQbeYF50LiE4KjYgfB8Wmpm2eqdvwBHS2MrRA8hJ4RtObqLDHvg2+ulXvR5Yq5nwYttdEHfPRLow==")

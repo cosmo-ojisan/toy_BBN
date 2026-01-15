@@ -1,34 +1,3 @@
 OK_FORMAT = True
-
-test = {
-    "name": "qB3",
-    "points": 1,
-    "suites": [
-        {
-            "cases": [
-                {
-                    "code": r"""
->>> from tests._checker import _v
->>> _v(ans_B3_3, "dfe88090c5ed7ac2")
-True
-""",
-                    "hidden": False,
-                    "locked": False,
-                },
-                {
-                    "code": r"""
->>> from tests._checker import _v
->>> _v(ans_B3_4, "dfe88090c5ed7ac2")
-True
-""",
-                    "hidden": False,
-                    "locked": False,
-                },
-            ],
-            "scored": True,
-            "setup": "",
-            "teardown": "",
-            "type": "doctest"
-        }
-    ]
-}
+from tests._loader import _d
+test = _d("eJydj71qwzAUhRPiOMW0S59AZHKhhFC3JFk8ZC3ZuhYhpBtkWkuufhIyBDrWcMfb943iB+jQu134zvk439nvajwa7kwlZka0QDj52laEeWcbEzy9jjH3sQng6Z2u1FQKPzzlkJFWpcyuqOua7Z1tWSKDX3CpQX6AY03bWRcYPwwEP5TCeL6tePXI5moP6/Vys5QvoFZCPs0fijcXoUh23SgFhnrMP23qUdTHpNPFP0zPf5n0ba/v+ghppLQueX5w6iHEjnBEeBNAOGWPhvQ9ZuHUpakzZeXVTFHExQW4WW8+")
