@@ -1,0 +1,3 @@
+OK_FORMAT = True
+from tests._loader import _d
+test = _d("eJxrYJmaxwABtVM0eljyEnNTp/QwF7obT+lhK8jPzCspnuLN2MNWXJpZklo8JXYKWFVJZQFQFXtKfjJQsGRKD2tyYjFUtoclOT8FKClhZ2enkJhXHO9uHG+oYGuroOSsxBVSVJo6pTixNLFUDwDuqCp9")
