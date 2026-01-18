@@ -38,7 +38,6 @@ jupyter notebook
 ### 1차시: H-He-4 토이 BBN — 동결과 헬륨 비율
 
 **학생용:** `dist/student/bbn_toy_lesson1.ipynb`
-**강사용:** `dist/bbn_toy_lesson1_master.ipynb`
 
 | Part | 내용 | 문항 |
 |------|------|------|
@@ -56,7 +55,6 @@ jupyter notebook
 ### 2차시: 중수소 병목 — 핵합성 시작 스위치
 
 **학생용:** `dist/student/bbn_toy_lesson2.ipynb`
-**강사용:** `dist/bbn_toy_lesson2_master.ipynb`
 
 | Part | 내용 | 문항 |
 |------|------|------|
@@ -74,7 +72,6 @@ jupyter notebook
 ### 3차시: 최소 핵반응 네트워크 — He-4까지 만들기
 
 **학생용:** `dist/student/bbn_toy_lesson3.ipynb`
-**강사용:** `dist/bbn_toy_lesson3_master.ipynb`
 
 | Part | 내용 | 문항 |
 |------|------|------|
@@ -115,12 +112,6 @@ grader.check('qA0')   # A0 문항 채점
 grader.check('qD1')   # D1 문항 채점
 ```
 
-### 전체 채점
-각 노트북 마지막에 전체 채점 셀이 있습니다:
-```python
-grader.check_all()
-```
-
 > **참고:** 각 차시별로 해당 차시의 테스트만 실행됩니다 (예: 1차시는 qA, qB, qC 테스트만).
 
 ---
@@ -135,46 +126,25 @@ toy_bbn/
 │   ├── explanation_lesson2.md             # 2차시 해설서
 │   ├── explanation_lesson3.md             # 3차시 해설서
 │   └── explanation_lesson4.md             # 4차시 해설서
-├── dist/
-│   ├── student/                           # 학생 배포용
-│   │   ├── bbn_toy_lesson1.ipynb          # 1차시 학생용
-│   │   ├── bbn_toy_lesson2.ipynb          # 2차시 학생용
-│   │   ├── bbn_toy_lesson3.ipynb          # 3차시 학생용
-│   │   ├── bbn_toy_lesson4.ipynb          # 4차시 학생용
-│   │   └── tests/                         # 테스트 파일 (74개)
-│   │       ├── qA0.py ~ qA11.py           # 1차시 Part A
-│   │       ├── qB0.py ~ qB7.py            # 1차시 Part B
-│   │       ├── qC0.py ~ qC8.py            # 1차시 Part C
-│   │       ├── qD0.py ~ qD5.py            # 2차시 Part D
-│   │       ├── qE0.py ~ qE3.py            # 2차시 Part E
-│   │       ├── qF0.py ~ qF2.py            # 2차시 Part F
-│   │       ├── qG0.py ~ qG5.py            # 3차시 Part G
-│   │       ├── qH0.py ~ qH4.py            # 3차시 Part H
-│   │       ├── qI0.py ~ qI4.py            # 3차시 Part I
-│   │       ├── qJ0.py ~ qJ5.py            # 4차시 Part J
-│   │       ├── qK0.py ~ qK4.py            # 4차시 Part K
-│   │       └── qL0.py ~ qL4.py            # 4차시 Part L
-│   ├── tests/                             # 마스터 노트북용 테스트
-│   ├── bbn_toy_lesson1_master.ipynb       # 1차시 강사용 (정답 포함)
-│   ├── bbn_toy_lesson2_master.ipynb       # 2차시 강사용 (정답 포함)
-│   ├── bbn_toy_lesson3_master.ipynb       # 3차시 강사용 (정답 포함)
-│   └── bbn_toy_lesson4_master.ipynb       # 4차시 강사용 (정답 포함)
-├── 01_1차시_개선안_강의계획서_v2.md
-├── 02_2차시_강의계획서_중수소_병목_v2.md
-├── 03_3차시_강의계획서_최소반응네트워크_He4_v2.md
-└── 04_4차시_강의계획서_리튬7문제_12반응완성_v2.md
+├── bbn_toy_lesson1.ipynb          # 1차시 학생용
+├── bbn_toy_lesson2.ipynb          # 2차시 학생용
+├── bbn_toy_lesson3.ipynb          # 3차시 학생용
+├── bbn_toy_lesson4.ipynb          # 4차시 학생용
+└── tests/                         # 테스트 파일 (74개)
+│   ├── qA0.py ~ qA11.py           # 1차시 Part A
+│   ├── qB0.py ~ qB7.py            # 1차시 Part B
+│   ├── qC0.py ~ qC8.py            # 1차시 Part C
+│   ├── qD0.py ~ qD5.py            # 2차시 Part D
+│   ├── qE0.py ~ qE3.py            # 2차시 Part E
+│   ├── qF0.py ~ qF2.py            # 2차시 Part F
+│   ├── qG0.py ~ qG5.py            # 3차시 Part G
+│   ├── qH0.py ~ qH4.py            # 3차시 Part H
+│   ├── qI0.py ~ qI4.py            # 3차시 Part I
+│   ├── qJ0.py ~ qJ5.py            # 4차시 Part J
+│   ├── qK0.py ~ qK4.py            # 4차시 Part K
+│   └── qL0.py ~ qL4.py            # 4차시 Part L
+
 ```
-
----
-
-## 강사용 노트북
-
-`dist/bbn_toy_lesson*_master.ipynb` 파일들은 정답이 포함된 강사용 노트북입니다.
-
-- 모든 테스트가 100% 통과하도록 검증되었습니다
-- 학생에게 배포 시 `dist/student/` 폴더만 배포하세요
-
----
 
 ## 주의사항
 
